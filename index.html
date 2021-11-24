@@ -51,7 +51,10 @@
                         </div>
                     
                         <div class="jumbotron col-sm-12 col-md-6 pt-4">
-                            <button class="btn btn-warning btn-block px-4"><a class="text-decoration-none text-dark" href="#reserve-table">Reserve Table</a></button>
+                            <a href="#reserve-table" class="btn btn-warning btn-block px-4 nav-link text-dark"
+                            data-toggle="tooltip" data-html="true" 
+                            title="or call us at <br><strong>+852 1245678 </strong></br>"
+                            data-placement="bottom">Reserve Table</a>
                         </div>
                     
                     </div>
@@ -219,6 +222,12 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!--Custom Script-->
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
     </main>
 </body>
 
